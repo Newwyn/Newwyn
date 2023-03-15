@@ -1,4 +1,6 @@
-﻿using System;
+﻿using NguyenTongPhucNguyen.Context;
+using NguyenTongPhucNguyen.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -7,10 +9,17 @@ using System.Web.Mvc;
 namespace NguyenTongPhucNguyen.Controllers
 {
     public class HomeController : Controller
+    
     {
+        WebBanHangEntities BanHang = new WebBanHangEntities();
         public ActionResult Index()
         {
-            return View();
+            HomeModel model = new HomeModel();
+            model.ListCategories = BanHang.Category.ToList();
+            model.ListBrands = BanHang.Brand.ToList();
+            model.ListUsers = BanHang.User.ToList();
+            model.ListProducts = BanHang.Product.ToList();
+            return View(model);
         }
 
         public ActionResult About()

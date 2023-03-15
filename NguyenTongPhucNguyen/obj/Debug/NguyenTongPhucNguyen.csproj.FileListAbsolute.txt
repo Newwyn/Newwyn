@@ -77,3 +77,7 @@ D:\Nguyen2120110091\NguyenTongPhucNguyen\obj\Debug\NguyenTongPhucNguyen.csproj.C
 D:\Nguyen2120110091\NguyenTongPhucNguyen\obj\Debug\NguyenTongPhucNguyen.csproj.CopyComplete
 D:\Nguyen2120110091\NguyenTongPhucNguyen\obj\Debug\NguyenTongPhucNguyen.dll
 D:\Nguyen2120110091\NguyenTongPhucNguyen\obj\Debug\NguyenTongPhucNguyen.pdb
+D:\Nguyen2120110091\NguyenTongPhucNguyen\bin\EntityFramework.dll
+D:\Nguyen2120110091\NguyenTongPhucNguyen\bin\EntityFramework.SqlServer.dll
+D:\Nguyen2120110091\NguyenTongPhucNguyen\bin\EntityFramework.xml
+D:\Nguyen2120110091\NguyenTongPhucNguyen\bin\EntityFramework.SqlServer.xml

@@ -1,4 +1,5 @@
-﻿@{
+﻿@model NguyenTongPhucNguyen.Models.HomeModel
+@{
     ViewBag.Title = "Home Page";
 }
 
@@ -118,15 +119,15 @@
                 </div>
             </div> <!-- col.// -->
             <div class="row no-gutters items-wrap">
-                @for (int i = 1; i < 5; i++)
+                @foreach (var item in Model.ListProducts)
                 {
                     <div class="col-md col-6">
                         <figure class="card-product-grid card-sm">
                             <a href="#" class="img-wrap">
-                                <img src="~/Content/images/items/3.jpg">
+                                <img src="~/Content/images/items/@item.Avatar">
                             </a>
                             <div class="text-wrap p-3">
-                               @Html.ActionLink("Sản phẩm " + i, "Detail", "Product", new { }, null)
+                                <a href="#">@item.Name</a>
                                 <span class="badge badge-danger"> -20% </span>
                             </div>
                         </figure>
